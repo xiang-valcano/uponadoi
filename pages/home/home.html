@@ -1,0 +1,25 @@
+<div layout="row">
+    <div flex="80" layout="column">
+        <div style="width:100%;height:50%;background:rgb(23,64,112);color:white;" layout="column" layout-align="center center">
+            <div align="center">"Every mountain has its own story."</div>
+            <br>
+            <div>
+                <md-button ui-sref="account" class="md-primary md-hue-3 md-raised" style="color:rgb(23,64,112);width:180px;">Join Us Now</md-button>
+            </div>
+        </div>
+        <div style="letter-spacing:5px;font-weight:bold;color:rgb(239,82,95);padding-top:30px;padding-bottom:30px;" layout="row"
+            layout-align="space-around center">
+            <img src="/resources/img/home/join.png" alt="" width="45%">
+            <img src="/resources/img/home/ios.png" alt="" width="25%" style="cursor:pointer;">
+            <img src="/resources/img/home/android.png" alt="" width="22.5%" style="cursor:pointer;">
+        </div>
+    </div>
+    <div flex="20" style="margin-left:30px;" layout="column">
+        <div style="height:70%;overflow-y:hidden;">
+            <div id="vertical-slide">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" ng-repeat="photo in home.photos" width="100%"
+                    class="photo" ng-click="home.showDialog(photo + 1)">
+            </div>
+        </div>
+    </div>
+</div>

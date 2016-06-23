@@ -1,0 +1,19 @@
+{
+  "name": "uponadoi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://xiang-aloha@bitbucket.org/xiang-aloha/uponadoi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/xiang-aloha/uponadoi#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

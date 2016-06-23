@@ -1,0 +1,28 @@
+<div id="explore">
+    <div layout="row">
+        <div style="position:relative">
+            <img src="/resources/img/explore/button/search-bar.png" alt="" height="40px">
+            <input type="text" placeholder="type here to search" style="position:absolute;left:8%;top:0;line-height:32px;width:460px;border:none;outline:none;">
+            <img src="/resources/img/explore/button/search-menu.png" alt="" height="24px" style="position:absolute;padding:8px;right:0;top:0;">
+        </div>
+        <span flex></span>
+        <img src="/resources/img/explore/button/refresh.png" alt="" height="40px" style="cursor:pointer" ng-click="explore.shuffle()">
+    </div>
+    <br>
+    <br>
+    <div layout="row">
+        <div flex ng-repeat="photo in explore.list" ng-if="$index < 5">
+            <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="explore.showDialog(photo + 1)">
+        </div>
+    </div>
+    <div layout="row">
+        <div flex ng-repeat="photo in explore.list" ng-if="$index >= 5 && $index < 10">
+            <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="explore.showDialog(photo + 1)">
+        </div>
+    </div>
+    <div layout="row">
+        <div flex ng-repeat="photo in explore.list" ng-if="$index >= 10">
+            <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="explore.showDialog(photo + 1)">
+        </div>
+    </div>
+</div>

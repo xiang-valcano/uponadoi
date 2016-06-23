@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UPONADOI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1b2052">
+    <link rel="stylesheet" href="style.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+</head>
+
+<body>
+
+    <div id="background">
+        <img id="floor" src="resources/background.svg" alt="">
+
+        <img id="button1" src="resources/buttons/b1-hover.png" onclick="toggleMsg(0)" alt="" class="animation-element blink-button">
+        <img id="button2" src="resources/buttons/b2-hover.png" onclick="toggleMsg(1)" alt="" class="animation-element blink-button">
+        <img id="button3" src="resources/buttons/b3-hover.png" onclick="toggleMsg(2)" alt="" class="animation-element blink-button">
+        <img id="button4" src="resources/buttons/b4-hover.png" onclick="toggleMsg(3)" alt="" class="animation-element blink-button">
+        <img id="button5" src="resources/buttons/b5-hover.png" onclick="toggleMsg(4)" alt="" class="animation-element blink-button">
+
+        <div id="cloud">
+            <img id="cloud-left" src="resources/cloud.png" alt="" width="50%">
+            <img id="cloud-right" src="resources/cloud.png" alt="" width="50%">
+        </div>
+
+        <img id="msg1" src="resources/msg/1.png" alt="" class="animation-element msg zoomIn" style="left:20%;bottom:6%;" width="8%">
+        <img id="msg2" src="resources/msg/2.png" alt="" class="animation-element msg zoomIn" style="left:35%;bottom:6%;" width="8%">
+        <img id="msg3" src="resources/msg/3.png" alt="" class="animation-element msg slideInLeft" style="left:52%;bottom:22%;" width="8%">
+        <img id="challenge1" src="resources/msg/4.png" alt="" class="animation-element msg zoomIn" style="left:71%;bottom:21%;" width="8%">
+        <img id="msg4" src="resources/msg/5.png" alt="" class="animation-element msg" style="right:3%;bottom:3.5%;" width="8.5%">
+        <img id="challenge2" src="resources/msg/6.png" alt="" class="animation-element msg zoomIn" style="left:73%;bottom:41.5%;"
+            width="8%">
+        <img id="msg5" src="resources/msg/7.png" alt="" class="animation-element msg zoomIn" style="right:3%;bottom:57%;" width="8%">
+        <img id="challenge3" src="resources/msg/8.png" alt="" class="animation-element msg zoomIn" style="right:5.5%;bottom:71%;"
+            width="8%">
+        <img id="msg6" src="resources/msg/9.png" alt="" class="animation-element msg zoomIn" style="right:26.5%;bottom:73%;" width="8%">
+        <img id="msg7" src="resources/msg/10.png" alt="" class="animation-element msg zoomIn" style="right:40%;bottom:71%;" width="8%">
+        <img id="msg8" src="resources/msg/11.png" alt="" class="animation-element msg zoomIn" style="right:56.6%;top:3%;" width="8%">
+        <img id="msg9" src="resources/msg/12.png" alt="" class="animation-element msg zoomIn" style="left:13.5%;top:4.5%;" width="8%">
+        <img id="msg10" src="resources/msg/13.png" alt="You Did It" class="animation-element msg zoomIn" style="left:5.7%;top:37%;"
+            width="8%">
+        <a href="/home"><img id="challenge4" src="resources/buttons/join-us.png" alt="Join Us" class="animation-element msg no-animation" style="left:20.5%;top:47%;"
+            width="8%" ></a>
+        <img id="start-over" src="resources/buttons/go-back.png" alt="Go Back" class="animation-element msg no-animation" style="left:6.5%;top:50%;"
+            width="4%" onclick="startOver()">
+
+
+        <!--<div style="position:fixed;bottom:26%;left:7.9%;width:6%;height:4.8%">
+            <video width="101%" height="100%" autoplay loop controls>
+                <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div style="position:fixed;bottom:23.5%;right:4.70%;width:6%;height:4.8%">
+            <object width="101%" height="100%" data="http://www.youtube.com/v/XGSy3_Czz8k"></object>
+        </div>
+        <div style="position:fixed;top:36.55%;right:24.98%;width:6%;height:4.8%">
+            <video width="101%" height="100%" controls>
+                <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div style="position:fixed;top:5.15%;right:9.68%;width:6%;height:4.8%">
+            <object width="101%" height="100%" data="http://www.youtube.com/v/XGSy3_Czz8k"></object>
+        </div>-->
+    </div>
+    <div id="step-wrapper">
+        <div id="step" align="center">
+            <img id="left" src="resources/left-foot.png" alt="">
+            <img id="right" src="resources/right-foot.png" alt="">
+        </div>
+    </div>
+    <div style="padding-top:18500px"></div>
+    <div id="loading" align="center">
+        <div>
+            <div class="loader">Loading...</div>
+        </div>
+        <div>
+            <u>Loading</u>
+        </div>
+    </div>
+
+    <script src="controller.js"></script>
+</body>
+
+</html>

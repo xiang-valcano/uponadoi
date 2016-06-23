@@ -1,0 +1,15 @@
+<div id="doi" layout="row">
+    <div ui-view flex="65" style="padding-bottom:100px;">
+        <img src="/resources/img/doi/chiangmai_map_rollover.png" alt="">
+    </div>
+    <!--<img ng-src="/resources/img/doi/{{doi.province}}.png" alt="" width="65%">-->
+    <div class="menu" flex>
+        <div layout="column" style="width:60%;height:100%;">
+            <div class="button" ng-repeat="province in doi.provinces" id="{{province.data}}" ui-sref-opts="{reload:true}" ui-sref="doi.province({province: province.data, bg:province.bg })" ui-sref-active="active"
+                ng-mouseenter="province.hover=true" ng-mouseleave="province.hover=false"></div>
+            <!--<div ng-repeat="province in doi.provinces" class="button" ui-sref="doi.province({province: province.data })" ui-sref-active="active"
+                ng-mouseenter="province.hovering=true" ng-mouseleave="province.hovering=false"><b>{{province.name}}</b></div>-->
+        </div>
+        <img ng-src="/resources/img/doi/border.png" alt="" width="60%">
+    </div>
+</div>

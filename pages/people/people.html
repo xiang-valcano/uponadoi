@@ -1,0 +1,17 @@
+<div id="people" layout="column">
+    <div ui-view style="position:relative;"></div>
+    <br>
+    <div layout="row" layout-align="space-between end">
+        <div ng-repeat="tribe in people.tribes" ng-if="$index < 6" flex align="center">
+            <img id="{{tribe.name}}" ng-src="/resources/img/people/{{tribe.name}}.png" alt="" height="25%" class="tribe" ng-mouseenter="people.hover(true, tribe.name)" ng-mouseleave="people.hover(false, tribe.name)" ui-sref="people.tribe({tribe: tribe.name, bg: tribe.bg})">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div layout="row" layout-align="space-around end">
+        <div ng-repeat="tribe in people.tribes" ng-if="$index >= 6" flex align="center">
+            <img id="{{tribe.name}}" ng-src="/resources/img/people/{{tribe.name}}.png" alt="" height="25%" class="tribe" ng-mouseenter="people.hover(true, tribe.name)" ng-mouseleave="people.hover(false, tribe.name)" ui-sref="people.tribe({tribe: tribe.name, bg: tribe.bg})">
+        </div>
+    </div>
+</div>

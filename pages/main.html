@@ -1,0 +1,43 @@
+<html ng-app="App">
+
+<head>
+    <base href="/">
+    <title>UPONADOI</title>
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="/pages/style.css">
+    <script src="/bower_components/angular/angular.min.js"></script>
+</head>
+
+<body ng-controller="Ctrl as ctrl" ng-cloak>
+    <div id="outer-bg" style="background-image:url(/resources/img/people/{{$root.bg}}.png);">
+        <div id="inner-bg">
+            <div id="menu" layout="row" layout-align="space-between end">
+                <div ng-repeat="menu in ctrl.menu" align="center" style="max-width:14%;">
+                    <md-button ng-if="menu.label != 'Logo'" ui-sref="{{menu.sref}}" ui-sref-active="active" ui-sref-opts="{reload:true}">{{menu.label}}</md-button>
+                    <a ng-if="menu.label == 'Logo'" ng-href="{{menu.href}}"><img ng-src="{{menu.src}}" alt="" width="100%"></a>
+                </div>
+            </div>
+            <div id="content" ui-view></div>
+        </div>
+    </div>
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="/bower_components/angular-messages/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="/bower_components/angular-material/angular-material.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/pages/module.js"></script>
+    <script src="/pages/config.js"></script>
+    <script src="/pages/controller.js"></script>
+
+    <!-- Doi -->
+    <script src="/pages/home/home-controller.js"></script>
+    <script src="/pages/doi/doi-controller.js"></script>
+    <script src="/pages/people/people-controller.js"></script>
+    <script src="/pages/explore/explore-controller.js"></script>
+    <script src="/pages/account/account-controller.js"></script>
+</body>
+
+</html>

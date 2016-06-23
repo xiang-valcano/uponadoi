@@ -1,0 +1,55 @@
+<div id="account" style="position:relative;">
+    <img src="/resources/img/account/background.png" alt="" width="100%">
+    <div style="position:absolute;top:0;left:26%;width:61.2%;height:100%!important;overflow-y:scroll;">
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index < 3">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index >= 3 && $index < 6">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index >= 6 && $index < 9">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index >= 9 && $index < 12">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index >= 12 && $index < 15">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index >= 15 && $index < 18">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index >= 18 && $index < 21">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index >= 21 && $index < 24">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index >= 24 && $index < 27">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+        <div layout="row">
+            <div flex ng-repeat="photo in account.photos" ng-if="$index >= 27">
+                <img ng-src="/resources/img/explore/pictures/{{photo + 1}}_rollover.png" alt="" width="100%" class="photo" ng-click="account.showDialog(photo + 1)">
+            </div>
+        </div>
+    </div>
+</div>
