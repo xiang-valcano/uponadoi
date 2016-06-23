@@ -65,11 +65,11 @@ body, .md-button {
 }
 /*---------- Slide ----------*/
 #vertical-slide {
-    animation: slide-up 90s 1s ease-out infinite;
+    animation: slide-up 120s 1s ease-out infinite;
 }
 @keyframes slide-up {
     0% {transform: translateY(0%); }
-    3% {transform: translateY(-3.35%); }
+    /*3% {transform: translateY(-3.35%); }
     6% {transform: translateY(-6.65%); }
     9% {transform: translateY(-10%); }
     12% {transform: translateY(-13.4%); }
@@ -95,7 +95,7 @@ body, .md-button {
     72% { transform: translateY(-80%); }
     75% { transform: translateY(-83.4%); }
     78% { transform: translateY(-86.8%); }
-    81% { transform: translateY(-90%); }
+    81% { transform: translateY(-90%); }*/
     90% { transform: translateY(-90%); }
     97% { transform: translateY(0%); }
     /*84% { transform: translateY(-93.35%); }*/
