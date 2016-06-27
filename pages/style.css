@@ -198,13 +198,15 @@ body, .md-button {
     left: 0;
     right: 0;
     bottom: 0;
+    overflow-y: scroll;
 }
 #dialog .content .photo {
     position: absolute;
-    width:50%;
+    width:90%;
     top:50%;
     transform: translate(-50%, -50%);
 }
+@media (min-width:1024px) { #dialog .content .photo { width:65%; } }
 @keyframes backdrop {
     0% { opacity: 0; }
     100% { opacity: 0.8; }
