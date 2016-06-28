@@ -156,16 +156,16 @@ body, .md-button {
     50% { opacity: 1; }
     100% { opacity: 0; }
 }
-#akha-map { left:49.8%;top:5.6%;width:13.5%; }
-#daraang-map { left:50.65%;top:7.8%;width:5%; }
+#akha-map { left:49.8%;top:5.8%;width:13.5%; }
+#daraang-map { left:50.7%;top:7.6%;width:5%; }
 #hmong-map, #kachin-map, #yunnan-map { left:50.67%;top:5.9%;width:8.5%; }
-#karen-map { left:48.4%;top:7.8%;width:9.1%; }
-#lahu-map { left:48.4%;top:5.6%;width:10.8%; }
-#lishu-map { left:48.4%;top:5.8%;width:14.8%; }
+#karen-map { left:48.4%;top:7.7%;width:9.1%; }
+#lahu-map { left:48.4%;top:5.7%;width:10.8%; }
+#lishu-map { left:48.5%;top:5.9%;width:14.8%; }
 #mien-map { left:56.4%;top:10.2%;width:3%; }
 #tailue-map { left:48.4%;top:5.7%;width:13.4%; }
 #taiyai-map { left:48.4%;top:5.9%;width:10.8%; }
-#lua-map { left:50.65%;top:7.8%;width:7%; }
+#lua-map { left:50.65%;top:7.7%;width:7%; }
 
 /*---------- Explore ----------*/
 #explore .photo {
