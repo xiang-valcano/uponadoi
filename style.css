@@ -66,11 +66,13 @@ body {
 
 #cloud {
     position:absolute;
-    left:0;top:0;
+    z-index: 10;
+    left:0;
+    top:0;
     width:200%;
     height:100%;
-    animation: cloud 300s linear infinite;
     pointer-events: none;
+    animation: cloud 300s linear infinite;
 }
 #cloud img {
     float: left;
@@ -93,8 +95,14 @@ body {
     100% { transform: translateX(-100%) scale(0,0); }
 }
 @keyframes cloud {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-1600px, 0); }
+}
+@media (min-width:600px) {
+@keyframes cloud {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-3820px, 0); }
+}
 }
 /*---------- Button ----------*/
 #button1 {left:45.03%; top:77.463%; width:3.165%; }
