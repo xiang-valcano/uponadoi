@@ -1,4 +1,4 @@
-angular.module('App').controller('PeopleCtrl', ['$scope', '$rootScope', 'bg', function (scope, rootScope, bg) {
+angular.module('App').controller('PeopleCtrl', ['$scope', '$rootScope', 'bg', '$state', function (scope, rootScope, bg, state) {
     var self = this;
     this.scope = scope;
 
@@ -23,6 +23,10 @@ angular.module('App').controller('PeopleCtrl', ['$scope', '$rootScope', 'bg', fu
         var elem = document.getElementById(tribe);
         if (hover) elem.src = "/resources/img/people/" + tribe + "_rollover.png";
         else elem.src = "/resources/img/people/" + tribe + ".png";
+    }
+
+    self.hideMenu = function () {
+        return (state.current.name != 'people')
     }
 }]);
 
