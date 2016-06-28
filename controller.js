@@ -177,8 +177,8 @@ var img = [
     { id: '#challenge1', loaded: false },
     { id: '#challenge2', loaded: false },
     { id: '#challenge3', loaded: false },
-    { id: '#challenge4', loaded: false },
-    { id: '#start-over', loaded: false },
+    // { id: '#challenge4', loaded: false },
+    // { id: '#start-over', loaded: false },
     { id: '#left', loaded: false },
     { id: '#right', loaded: false },
 ]

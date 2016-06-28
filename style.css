@@ -16,11 +16,23 @@ body {
 #start-over, #challenge4 {
     cursor: pointer;
 }
-#start-over:hover {
-    content:url(resources/buttons/go-back-hover.png);
+#start-over {
+    background-image: url(resources/buttons/go-back.png);
+    width:4%;
+    height:4%;
 }
-#challenge4:hover {
-    content:url(resources/buttons/join-us-hover.png);
+#challenge4 {
+    background-image: url(resources/buttons/join-us.png);
+    width:8%;
+    height:11.5%;
+}
+.button {
+    background-size: 200%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.button:hover {
+    background-position: 100% 0;
 }
 .msg {
     position:absolute;

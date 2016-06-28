@@ -115,26 +115,27 @@ body, .md-button {
 #doi .menu .button {
     background-repeat: no-repeat;
     height:6%;
-    background-size: auto 100%;
     margin:3%;
     cursor: pointer;
+    background-image: url(/resources/img/doi/buttons.png);
+    background-size: auto 1600%;
 }
-#doi .menu .button#chiangmai { background-image: url(/resources/img/doi/chiangmai.png); }
-#doi .menu .button#chiangmai:hover, #doi .menu #chiangmai.button.active { background-image: url(/resources/img/doi/chiangmai_rollover.png); }
-#doi .menu .button#chiangrai { background-image: url(/resources/img/doi/chiangrai.png); }
-#doi .menu .button#chiangrai:hover, #doi .menu #chiangrai.button.active { background-image: url(/resources/img/doi/chiangrai_rollover.png); }
-#doi .menu .button#lampang { background-image: url(/resources/img/doi/lampang.png); }
-#doi .menu .button#lampang:hover, #doi .menu #lampang.button.active { background-image: url(/resources/img/doi/lampang_rollover.png); }
-#doi .menu .button#maehongson { background-image: url(/resources/img/doi/maehongson.png); }
-#doi .menu .button#maehongson:hover, #doi .menu #maehongson.button.active { background-image: url(/resources/img/doi/maehongson_rollover.png); }
-#doi .menu .button#nan { background-image: url(/resources/img/doi/nan.png); }
-#doi .menu .button#nan:hover, #doi .menu #nan.button.active { background-image: url(/resources/img/doi/nan_rollover.png); }
-#doi .menu .button#phayao { background-image: url(/resources/img/doi/phayao.png); }
-#doi .menu .button#phayao:hover, #doi .menu #phayao.button.active { background-image: url(/resources/img/doi/phayao_rollover.png); }
-#doi .menu .button#phrae { background-image: url(/resources/img/doi/phrae.png); }
-#doi .menu .button#phrae:hover, #doi .menu #phrae.button.active { background-image: url(/resources/img/doi/phrae_rollover.png); }
-#doi .menu .button#tak { background-image: url(/resources/img/doi/tak.png); }
-#doi .menu .button#tak:hover, #doi .menu #tak.button.active { background-image: url(/resources/img/doi/tak_rollover.png); }
+#doi .menu .button#chiangmai { background-position: 0 0; }
+#doi .menu #chiangmai.button:hover, #doi .menu #chiangmai.button.active { background-position: 0 7% !important;}
+#doi .menu .button#chiangrai { background-position: 0 14%; }
+#doi .menu #chiangrai.button:hover, #doi .menu #chiangrai.button.active { background-position: 0 20.6% !important;}
+#doi .menu .button#lampang { background-position: 0 27%; }
+#doi .menu #lampang.button:hover, #doi .menu #lampang.button.active { background-position: 0 34% !important;}
+#doi .menu .button#maehongson { background-position: 0 41%; }
+#doi .menu #maehongson.button:hover, #doi .menu #maehongson.button.active { background-position: 0 48% !important;}
+#doi .menu .button#nan { background-position: 0 54.6%; }
+#doi .menu #nan.button:hover, #doi .menu #nan.button.active { background-position: 0 60.8% !important;}
+#doi .menu .button#phayao { background-position: 0 67%; }
+#doi .menu #phayao.button:hover, #doi .menu #phayao.button.active { background-position: 0 74% !important;}
+#doi .menu .button#phrae { background-position: 0 81%; }
+#doi .menu #phrae.button:hover, #doi .menu #phrae.button.active { background-position: 0 87.5% !important;}
+#doi .menu .button#tak { background-position: 0 93.6%; }
+#doi .menu #tak.button:hover, #doi .menu #tak.button.active { background-position: 0 100% !important;}
 #doi .map { 
     position:absolute; 
     transition: opacity 0.2s; 
