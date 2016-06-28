@@ -69,38 +69,9 @@ body, .md-button {
     animation: slide-up 120s 1s ease-out infinite;
 }
 @keyframes slide-up {
-    0% {transform: translateY(0%); }
-    /*3% {transform: translateY(-3.35%); }
-    6% {transform: translateY(-6.65%); }
-    9% {transform: translateY(-10%); }
-    12% {transform: translateY(-13.4%); }
-    15% {transform: translateY(-16.8%); }
-    18% {transform: translateY(-20%); }
-    21% {transform: translateY(-23.4%); }
-    24% {transform: translateY(-26.7%); }
-    27% {transform: translateY(-30%); }
-    30% {transform: translateY(-33.4%); }
-    33% { transform: translateY(-36.7%); }
-    36% { transform: translateY(-40%); }
-    39% { transform: translateY(-43.4%); }
-    42% { transform: translateY(-46.7%); }
-    45% { transform: translateY(-50%); }
-    48% { transform: translateY(-54.2%); }
-    51% { transform: translateY(-56.7%); }
-    54% { transform: translateY(-60%); }
-    57% { transform: translateY(-63.4%); }
-    60% { transform: translateY(-66.65%); }
-    63% { transform: translateY(-70%); }
-    66% { transform: translateY(-73.4%); }
-    69% { transform: translateY(-76.7%); }
-    72% { transform: translateY(-80%); }
-    75% { transform: translateY(-83.4%); }
-    78% { transform: translateY(-86.8%); }
-    81% { transform: translateY(-90%); }*/
+    0%, 97% {transform: translateY(0%); }
     90% { transform: translateY(-87%); }
-    97% { transform: translateY(0%); }
-    /*84% { transform: translateY(-93.35%); }*/
-    /*87% { transform: translateY(-96.66%); }*/
+
 }
 /*---------- Doi ----------*/
 #doi .menu {
