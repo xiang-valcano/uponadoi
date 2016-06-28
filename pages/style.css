@@ -140,11 +140,25 @@ body, .md-button {
     position:absolute; 
     transition: opacity 0.2s; 
     opacity:0; 
-    top:2.87%; 
-    left:50.66%; 
-    width:44.2%; 
+    top:1.97%; 
+    left:49.886%; 
+    width:45.75%; 
+    height:100%;
+    background-image: url(/resources/img/doi/map-blink.png);
+    background-size: 800%;
+    background-repeat: no-repeat;
+    background-position: -100%;
+    
 }
-#doi .map-rollover { opacity: 1; }
+#doi .map.map-rollover { opacity: 1; }
+#doi #chiangmai.map.map-rollover { background-position: 0 0; }
+#doi #chiangrai.map.map-rollover { background-position: 14.285714% 0; }
+#doi #lampang.map.map-rollover { background-position: 28.57% 0; }
+#doi #maehongson.map.map-rollover { background-position: 42.86% 0; }
+#doi #nan.map.map-rollover { background-position: 57.144% 0; }
+#doi #phayao.map.map-rollover { background-position: 71.43% 0; }
+#doi #phrae.map.map-rollover { background-position: 85.72% 0; }
+#doi #tak.map.map-rollover { background-position: 100% 0; }
 /*---------- People ----------*/
 #people .tribe { cursor: pointer; }
 #people .tribe { cursor: pointer; }

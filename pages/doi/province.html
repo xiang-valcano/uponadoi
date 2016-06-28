@@ -1,11 +1,12 @@
 <div style="position:relative;">
     <img ng-src="/resources/img/doi/{{map.province}}_map.png" alt="" width="100%">
-    <img src="/resources/img/doi/chiangmai_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[0].hover && map.showPart() }]">
+    <div id="{{doi.provinces[doi.hoverItem].data}}" class="map" ng-class="[{'map-rollover': doi.hoverItem != -1 && map.showPart()}]"></div>
+    <!--<img src="/resources/img/doi/chiangmai_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[0].hover && map.showPart() }]">
     <img src="/resources/img/doi/chiangrai_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[1].hover && map.showPart()}]">
     <img src="/resources/img/doi/lampang_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[2].hover && map.showPart()}]">
     <img src="/resources/img/doi/maehongson_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[3].hover && map.showPart()}]">
     <img src="/resources/img/doi/nan_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[4].hover && map.showPart()}]">
     <img src="/resources/img/doi/phayao_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[5].hover && map.showPart()}]">
     <img src="/resources/img/doi/phrae_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[6].hover && map.showPart()}]">
-    <img src="/resources/img/doi/tak_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[7].hover && map.showPart()}]">
+    <img src="/resources/img/doi/tak_map_rollover.png" alt="" class="map" ng-class="[{'map-rollover': doi.provinces[7].hover && map.showPart()}]">-->
 </div>

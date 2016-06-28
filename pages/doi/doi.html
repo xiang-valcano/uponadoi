@@ -6,7 +6,7 @@
     <div class="menu" flex>
         <div layout="column" style="width:60%;height:100%;">
             <div class="button" ng-repeat="province in doi.provinces" id="{{province.data}}" ui-sref-opts="{reload:true}" ui-sref="doi.province({province: province.data, bg:province.bg })" ui-sref-active="active"
-                ng-mouseenter="province.hover=true" ng-mouseleave="province.hover=false"></div>
+                ng-mouseenter="doi.hoverItem=$index" ng-mouseleave="doi.hoverItem=-1"></div>
             <!--<div ng-repeat="province in doi.provinces" class="button" ui-sref="doi.province({province: province.data })" ui-sref-active="active"
                 ng-mouseenter="province.hovering=true" ng-mouseleave="province.hovering=false"><b>{{province.name}}</b></div>-->
         </div>

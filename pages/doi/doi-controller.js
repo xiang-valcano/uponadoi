@@ -12,7 +12,7 @@ angular.module("App").controller('DoiCtrl', ['$scope', '$rootScope', 'bg', '$sta
 angular.module('App').controller('DoiMenuCtrl', ['$scope', function (scope) {
     var self = this;
     this.scope = scope;
-
+    self.hoverItem = -1;
     self.provinces = [
         { name: 'Chiangmai', data: 'chiangmai', bg: '8' },
         { name: 'Chiangrai', data: 'chiangrai', bg: '2' },
